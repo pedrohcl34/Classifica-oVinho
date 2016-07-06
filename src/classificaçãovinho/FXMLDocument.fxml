@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="575.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classificaçãovinho.FXMLDocumentController">
+    <children>
+      <Label layoutX="130.0" layoutY="36.0" prefHeight="17.0" prefWidth="238.0" text="UNIVERSIDADE FEDERAL DO TOCANTINS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="53.0" text="CURSO DE CIÊNCIA DA COMPUTAÇÃO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="235.0" layoutY="142.0" />
+      <Separator layoutX="7.0" layoutY="10.0" prefHeight="3.0" prefWidth="1277.0" />
+      <Separator layoutX="417.0" layoutY="122.0" orientation="VERTICAL" prefHeight="393.0" prefWidth="0.0" />
+      <Separator layoutX="6.0" layoutY="540.0" prefHeight="3.0" prefWidth="1293.0" />
+      <ImageView fitHeight="99.0" fitWidth="88.0" layoutX="40.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BRASAO%20UFT.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0e6eb" height="335.0" layoutX="11.0" layoutY="155.0" stroke="BLACK" strokeType="INSIDE" width="1293.0" />
+      <Button layoutX="562.0" layoutY="500.0" mnemonicParsing="false" text="Classificar Tupla" />
+      <Label layoutX="554.0" layoutY="122.0" text="Classificar tupla">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+      <TableView fx:id="tabelaTupla" editable="true" layoutX="19.0" layoutY="168.0" prefHeight="73.0" prefWidth="1277.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="acidezFixa" prefWidth="87.0" text="Acidez Fixa" />
+          <TableColumn fx:id="acidezVolatil" prefWidth="112.0" text="Acidez Volátil" />
+            <TableColumn fx:id="acidoCitrico" prefWidth="103.0" text="Ácido Cítrico" />
+            <TableColumn fx:id="residuosDeAcucar" prefWidth="146.0" text="Resíduos de Áçucar" />
+            <TableColumn fx:id="cloridos" prefWidth="83.0" text="Cloridos" />
+            <TableColumn fx:id="dioxidoDeEnxofre" prefWidth="212.0" text="Livre de Dióxido de Enxofre" />
+            <TableColumn fx:id="dioxidoDeEnxofreTotal" prefWidth="209.0" text="Total de Dióxido de Enxofre" />
+            <TableColumn fx:id="densidade" prefWidth="83.0" text="Densidade" />
+            <TableColumn fx:id="ph" prefWidth="48.0" text="PH" />
+            <TableColumn fx:id="sulfato" prefWidth="75.0" text="Sulfato" />
+            <TableColumn fx:id="alcool" prefWidth="118.0" text="Álcool" />
+        </columns>
+      </TableView>
+      <Label layoutX="40.0" layoutY="408.0" text="Qualidade do Vinho:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
